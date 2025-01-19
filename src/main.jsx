@@ -7,7 +7,7 @@
  */
 
 // Importaciones
-import "../styles/App.css";
+import "./styles/App.css";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Suspense } from "react";
