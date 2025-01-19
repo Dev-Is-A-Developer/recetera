@@ -1,0 +1,26 @@
+/* PAGINA ERROR
+Estilos para PaginaError.jsx */
+
+/* Contenedor de la página */
+.paginaError {
+    padding: 1rem 2rem;
+    height: 100vh;
+}
+
+/* Link */
+.paginaError__link {
+    display: inline-block;
+    font-weight: 500;
+    color: var(--black);
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+  
+.paginaError__link:hover {
+    background-color: var(--lightblue);
+    color: var(--blue);
+    border: 1px solid var(--lightblue);
+}

@@ -18,7 +18,7 @@ import { useState, useRef, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import "../../styles/EditarReceta.css";
+import "../styles/EditarReceta.css";
 
 function EditarReceta() {
 	// Referencias para manejar los campos del formulario directamente

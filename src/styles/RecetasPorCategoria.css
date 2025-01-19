@@ -1,0 +1,122 @@
+/* RECETAS POR CATEGORIA
+Estilos para RecetasPorCategoria.jsx */
+
+/* Contenedor principal de la página */
+.recetasCategoria {
+    padding: 3rem 2rem;
+    background-color: var(--background);
+    height: auto;
+  }
+  
+  /* Encabezado principal de la página */
+  .recetasCategoria__header {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+  }
+  
+  /* Contenedor de las tarjetas de receta */
+  .recetasCategoria__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 3rem auto 1rem;
+  }
+  
+  /* Cada tarjeta de receta */
+  .recetasCategoria__card {
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+  }
+  
+  /* Título dentro de la tarjeta de receta */
+  .recetasCategoria__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  /* Entrada de informacion de la receta */
+  .recetasCategoria__entrada {
+    font-weight: 500;
+  }
+
+  /* Span para escritor */
+  .recetasCategoria span {
+    font-family: "Jost";
+    font-weight: 400;
+  }
+
+  /* Enlaces en la tarjeta de receta */
+  .recetasCategoria__link {
+    display: inline-block;
+    font-weight: 500;
+    color: var(--black);
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin-top: 2rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  .recetasCategoria__link:hover {
+    background-color: var(--lightblue);
+    color: var(--blue);
+    border: 1px solid var(--lightblue);
+  }
+
+  /* Aviso dentro de la página si no hay recetas */
+  .recetasCategoria__avisoTexto {
+    font-size: 1.25rem;
+    padding: 2rem 0;
+  }
+
+  /* Link de volver dentro de la página si no hay recetas */
+  .linkAviso {
+    font-family: "Jost";
+    font-weight: 500;
+    font-size: 1.25rem;
+    padding: 0.1rem 0.5rem;
+    margin-top: 0;
+    border: none;
+    border-radius: 20px;
+    transition: color 0.2s ease;
+  }
+
+  .linkAviso:hover {
+    background-color: var(--lightblue);
+    color: var(--blue);
+    border: none;
+  }
+  
+  /* Imagen de aviso */
+  .recetasCategoria__imagen {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* Para dispositivos pequeños (máximo 480px de ancho) */
+  @media (max-width: 480px) {
+    .recetasCategoria__header {
+        font-size: 2.5rem;
+    }
+    .recetasCategoria__cards {
+      grid-template-columns: 1fr;
+    }
+    .recetasCategoria__card{
+        padding: 1.5rem;
+    }
+    .recetasCategoria__titulo {
+        font-size: 1.75rem
+      }
+    .recetasCategoria__avisoTexto {
+        font-size: 1.15rem;
+    }
+    .linkAviso {
+        font-size: 1.15rem;
+    }
+  }
+  

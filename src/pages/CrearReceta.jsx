@@ -17,7 +17,7 @@ import { useNavigate } from "react-router-dom";
 import { useState, useContext, useRef } from "react";
 import axios from "axios";
 import { ContextoUsuario } from "../contexts/ContextoUsuario";
-import "../../styles/CrearReceta.css";
+import "../styles/CrearReceta.css";
 
 function CrearReceta() {
 	// Referencias para los campos del formulario

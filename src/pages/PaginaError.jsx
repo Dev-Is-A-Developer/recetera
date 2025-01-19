@@ -11,7 +11,7 @@
  */
 
 import { Link } from "react-router-dom";
-import "../../styles/PaginaError.css";
+import "../styles/PaginaError.css";
 
 function PaginaError() {
 	return (

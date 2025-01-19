@@ -15,7 +15,7 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
-import "../../styles/EliminarReceta.css";
+import "../styles/EliminarReceta.css";
 
 function EliminarReceta() {
 	// Obtener el ID de la receta desde los parámetros de la URL

@@ -1,0 +1,82 @@
+/* ---------------------------------
+APP CSS
+Estilos generales para la aplicación
+--------------------------------- */
+
+/* :root
+Colores principales y secundarios 
+*/
+#root {
+  --white: #FFFFFF;
+  --black: #19170f;
+  --text: #e43d12;
+  --background: #efeee7;
+  --yellow: #e2a025;
+  --blue: #3855b4;
+  --lightblue: #cbd2eb;
+  --lightred: #ffd8ce;
+}
+
+/* BODY
+Ajustes para el body del sitio web
+*/
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Jost";
+  background-color: var(--background);
+  color: var(--text);
+  text-align: left;
+}
+
+/* ELEMENTOS HTML
+Ajustes bases para los elementos HTML
+*/
+
+p {
+  font-family: "Cormorant Garamond";
+  font-weight: 500;
+  color: var(--black);
+}
+
+h1 {
+  color: var(--text);
+}
+
+h2 {
+  color: var(--text);
+}
+
+h3 {
+  color: var(--yellow);
+}
+
+h4 {
+  color: var(--yellow);
+}
+
+h5 {
+  color: var(--yellow);
+}
+
+h6 {
+  color: var(--text);
+}
+
+label {
+  font-family: "Cormorant Garamond";
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+textarea {
+  resize: none;
+}

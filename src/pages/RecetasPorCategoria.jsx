@@ -18,7 +18,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import "../../styles/RecetasPorCategoria.css";
+import "../styles/RecetasPorCategoria.css";
 import imagenAviso from "../assets/comida-tabla.jpg";
 
 const RecetasPorCategoria = () => {

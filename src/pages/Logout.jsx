@@ -16,7 +16,7 @@ import React from "react";
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { ContextoUsuario } from "../contexts/ContextoUsuario";
-import "../../styles/Logout.css";
+import "../styles/Logout.css";
 
 function Logout() {
 	// Obtener el objeto logout del ContextoUsuario

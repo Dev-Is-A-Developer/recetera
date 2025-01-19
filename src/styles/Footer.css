@@ -1,0 +1,91 @@
+/* FOOTER 
+Estilos para Footer.jsx
+- footer
+- seccion superiod
+- barra de dividir footer
+- seccion inferior
+*/
+
+/* FOOTER footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+/* FOOTER seccion superior */
+.footer__seccionArriba {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    padding-bottom: 1rem;
+}
+
+/* FOOTER lista de seccion superior */
+.footer__lista {
+    font-size: 1rem;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+/* FOOTER elementos de la lista de seccion superior */
+.footer__elementoLista {
+    list-style-type: none;
+}
+
+/* FOOTER enlaces de elementos de la lista de seccion superior */
+.footer__elementoListaLink {
+    color: var(--black);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Los links cambian de color al hacer hover */
+.footer__elementoListaLink:hover {
+    color: var(--blue);
+}
+
+/* FOOTER linea horizontal para separa secciones */
+.footer__linea{
+    width: 100%;
+    height: 1.5px;
+    background-color: var(--lightblue);
+}
+
+/* FOOTER seccion inferior */
+.footer__seccionAbajo{
+    display: flex;
+    flex-direction: column;
+}
+
+/* FOOTER listas de seccion inferior */
+.footer__listaAbajo {
+    display: flex;
+    margin: 0;
+    padding: 1.5rem 0 0;
+    gap: 1rem;
+    font-size: 0.8rem;
+}
+
+/* FOOTER elementos de las listas de la seccion inferior */
+.footer__elementoListaAbajo {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+/* FOOTER copyright de seccion inferior */
+.footer__copyright {
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+/* Al estar menos de 768px la anchura, la lista del footer usa display flex en columna */
+@media screen and (max-width: 508px) {
+    .footer__lista {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}

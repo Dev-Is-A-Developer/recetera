@@ -17,7 +17,7 @@ import axios from "axios";
 import { useEffect, useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { ContextoUsuario } from "../contexts/ContextoUsuario";
-import "../../styles/MisRecetas.css";
+import "../styles/MisRecetas.css";
 import imagenCrear from "../assets/comida-tabla.jpg";
 
 function MisRecetas() {

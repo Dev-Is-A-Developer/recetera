@@ -19,7 +19,7 @@ import { useState, useRef, useContext } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { ContextoUsuario } from "../contexts/ContextoUsuario";
-import "../../styles/Login.css";
+import "../styles/Login.css";
 
 function Login() {
 	// Hook para redirigir al usuario después de completar una acción

@@ -18,7 +18,7 @@ import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "../../styles/Inicio.css";
+import "../styles/Inicio.css";
 import imagenIntro from "../assets/inicio-intro.jpg";
 import gallery1 from "../assets/horizontal-1.jpg";
 import gallery2 from "../assets/horizontal-2.jpg";
