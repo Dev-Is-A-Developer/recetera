@@ -1,0 +1,170 @@
+/* HEADER 
+Estilos para Header.jsx
+- navegación barra con logo y nav
+- menu responsive
+- lista de links
+- elementos de la lista de links
+*/
+
+/* HEADER header */
+.header {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 1.1rem 1.5rem;
+}
+
+/* HEADER logo */
+.header__logo {
+    font-family: 'Cormorant Garamond';
+    font-weight: 500;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 2rem;
+    transition-property: color;
+    transition-duration: 0.5s, 0.5s;
+}
+
+.header__logoLink {
+    color: var(--text);
+}
+
+/* Al hacer hover, se cambia de color */
+.header__logoLink:hover {
+    color: var(--blue);    
+}
+
+/* HEADER navigation */
+.header__nav {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+/* HEADER lista de links */
+.header__lista {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0.8rem;
+    list-style-type: none;
+}
+
+/* HEADER elementos de la lista */
+.header__elementoListaLink {
+    position: relative;
+    text-decoration: none;
+    color: var(--text);
+    padding: 0.7rem;
+    border-radius: 5px;
+}
+
+/* Al hacer hover, se cambia de color */
+.header__elementoListaLink:hover {
+    color: var(--blue);
+    background-color: var(--lightblue);
+
+}
+
+/* HEADER CORTINA RESPONSIVE
+Estilos para el header responsive.
+- boton de 3 rayas de menu responsive
+- boton cerrar
+- lista de links
+- elementos de la lista de links
+*/
+
+/* HEADER boton para version responsive (display none hasta llegar a 768px como max-width*/
+.header__responsiveButton {
+    display: none;
+    color: var(--text);
+    background-color: var(--background);
+    padding: 0.5rem 0.5rem;
+    border: none;
+    transition-property: font-size, color;
+    transition-duration: 0.5s, 0.5s;
+    transition: transform 2s;
+}
+
+.header__responsiveButton:hover {
+    transform: rotateY(360deg);
+    cursor: pointer;
+}
+
+/* Al estar menos de 768px la anchura, el boton para la version responsive aparece y la lista de elementos del header principal desaparece */
+@media screen and (max-width: 768px) {
+    .header__nav {
+        display: none;
+        margin: 0;
+    }
+    
+    .header__responsiveButton {
+        display: block;
+    }
+}
+
+/* HEADER RESPONSIVE header */
+.headerResponsive {
+    width: 0; /* escondido inicialmente */
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+    align-items: center;
+    transition: 0.5s width ease;
+}
+
+.headerResponsive--open {
+    width: 100%;
+  }
+
+/* HEADER RESPONSIVE boton cerrar */
+.headerResponsive__botonCierra {
+    margin: 1.6rem;
+    align-self: flex-end;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.25rem 0.7rem;
+    cursor: pointer;
+}
+
+/* HEADER RESPONSIVE lista de paginas */
+.headerResponsive__lista {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER RESPONSIVE elementos de la lista */
+.headerResponsive__elementoLista {
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* HEADER RESPONSIVE enlaces de elementos de la lista */
+.headerResponsive__elementoListaLink {
+    font-family: "Jost";
+    color: var(--black);
+    position: relative;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+/* Al hacer hover, se cambia de color */
+.headerResponsive__elementoListaLink:hover {
+    color: var(--blue);
+    background-color: var(--lightblue);
+}

@@ -1,6 +1,3 @@
-# recetera
-Proyecto React con CRUD de La Recetera
-
 # Descripcion de La Recetera
 
 Esta es una aplicación web de recetas que permite a los usuarios explorar y gestionar recetas organizadas por categorías. Los usuarios pueden ver recetas existentes de todos los usuarios; navegar entre categorías para descubrir nuevas ideas de cocina; y crear, editar, y eliminar sus propias recetas.

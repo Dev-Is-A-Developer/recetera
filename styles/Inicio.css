@@ -1,0 +1,269 @@
+/* INICIO
+Estilos para Inicio.jsx */
+
+/* INTRODUCCION */
+
+/* Contenedor principal para la introducción */
+.inicio__intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    background-color: var(--white);
+    overflow: hidden;
+  }
+  
+  /* Contenedor interno de la sección de introducción */
+  .intro__contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    gap: 5rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Sección de texto */
+  .intro__sobre {
+    flex: 1;
+    text-align: left;
+    animation: fadeInIzquierda 1s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  
+  /* Título en la introducción */
+  .intro__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+  /* Descripción en la introducción */
+  .intro__descripcion {
+    font-size: 1.25rem;
+    font-family: "Cormorant Garamond";
+    font-weight: 500;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+  
+  /* Enlace de categorías */
+  .intro__linkCategorias {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.125rem;
+    color: #fff;
+    background-color: var(--text);
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .intro__linkCategorias:hover {
+    background-color: #e64a19;
+    transform: translateY(-3px);
+  }
+  
+  /* Imagen en la introducción */
+  .intro__imagen {
+    flex: 1;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    animation: fadeInDerecha 1s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  
+  /* Para dispositivos con pantallas más pequeñas (máximo 768px de ancho) */
+  @media (max-width: 768px) {
+    .intro__contenedor {
+      flex-direction: column;
+      text-align: center;
+      gap: 1.5rem;
+    }
+    .intro__title {
+        font-size: 2rem;
+    }
+  }
+  
+  /* Para dispositivos móviles (máximo 480px de ancho) */
+  @media (max-width: 480px) {
+    .intro__title {
+      font-size: 2rem;
+    }
+  
+    .intro__descripcion {
+      font-size: 1rem;
+    }
+  
+    .intro__linkCategorias {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+  
+  /* Animations */
+
+  /* Animación de desvanecimiento desde la izquierda */
+  @keyframes fadeInIzquierda {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Animación de desvanecimiento desde la derecha */
+  @keyframes fadeInDerecha {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+/* GALERÍA DE IMÁGENES */
+
+/* Contenedor de la galería */
+.galeria__contenedor {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 images per row */
+    gap: 10px; /* Spacing between images */
+    padding: 20px;
+    background-color: var(--yellow);
+    justify-content: center;
+  }
+  
+  /* Elemento de imagen dentro de la galería */
+  .galeria__elemento {
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Imagen de la galería */
+  .galeria__imagen {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .galeria__elemento:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .galeria__elemento:hover .galeria__imagen {
+    transform: scale(1.1);
+  }
+  
+  
+  /* Para pantallas más pequeñas (máximo 1080px de ancho) */
+  @media (max-width: 1080px) {
+    .galeria__contenedor {
+      grid-template-columns: repeat(3, 1fr); /* 3 imagenes cada fila */
+    }
+  }
+  
+  /* Para dispositivos móviles (máximo 480px de ancho) */
+  @media (max-width: 480px) {
+    .galeria__contenedor {
+      grid-template-columns: repeat(2, 1fr); /* 2 imagenes cada fila */
+    }
+  
+    .galeria__elemento {
+      border-radius: 4px;
+    }
+  
+    .galeria__imagen {
+      transition: transform 0.2s ease;
+    }
+  }
+
+
+/* ÚLTIMAS RECETAS */
+
+/* Contenedor para las últimas recetas */
+.inicio__ultimasRecetas {
+    padding: 3rem 2rem;
+    background-color: var(--background);
+    height: auto;
+  }
+  
+  /* Encabezado de las últimas recetas */
+  .ultimasRecetas__header {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+  }
+  
+  /* Contenedor para las tarjetas de recetas */
+  .ultimasRecetas__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 3rem auto 1rem;
+  }
+  
+  /* Estilo para cada tarjeta de receta */
+  .ultimasRecetas__card {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 3rem;
+  }
+  
+  /* Título de cada receta */
+  .ultimasRecetas__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  /* Entrada de información de cada receta */
+  .ultimasRecetas__entrada {
+    font-weight: 500;
+  }
+
+  /* Span en entradas */
+  .inicio__ultimasRecetas span {
+    font-family: "Jost";
+    font-weight: 400;
+  }
+
+  /* Tipo de receta */
+  .ultimasRecetas__tipo {
+    color: var(--text);
+  }
+
+  /* Para dispositivos móviles (máximo 480px de ancho) */
+  @media (max-width: 480px) {
+    .ultimasRecetas__header {
+        font-size: 2.5rem;
+    }
+    .ultimasRecetas__cards {
+      grid-template-columns: 1fr;
+    }
+    .ultimasRecetas__card{
+        padding: 1.5rem;
+    }
+    .ultimasRecetas__titulo {
+        font-size: 1.75rem
+      }
+
+  }
+  

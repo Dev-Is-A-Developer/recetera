@@ -1,0 +1,71 @@
+/* ELIMINAR RECETAS
+Estilos para EliminarRecetas.jsx */
+
+/* Contenedor de la página */
+.eliminar {
+    padding: 3rem 2rem;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Texto principal */
+  .eliminar__texto {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0;
+  }
+
+  /* Contenedor de los botones */
+  .eliminar__containerButtons {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  /* Botones */
+  .eliminar__button {
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+    margin-top: 2rem;
+  }
+
+  /* Boton NO */
+  .buttonNo {
+    transition: background-color 0.2s ease, color 0.2s ease;
+    color: var(--lightblue);
+    background-color: var(--blue);
+    border: 2px solid var(--lightblue);
+  }
+
+  .buttonNo:hover {
+    color: var(--blue);
+    background-color: var(--lightblue);
+    border: 2px solid var(--lightblue);
+  }
+
+  /* Boton SI */
+  .buttonSi {
+    transition: background-color 0.2s ease, color 0.2s ease;
+    color: var(--lightred);
+    background-color: var(--text);
+    border: 2px solid var(--lightred);
+  }
+
+  .buttonSi:hover {
+    color: var(--text);
+    background-color: var(--lightred);
+    border: 2px solid var(--text);
+  }
+
+
+/* Para pantallas más pequeñas (máximo 480px) */
+  @media (max-width: 480px) {
+    .eliminar__texto {
+        font-size: 2rem;
+    }
+  }
+  
